@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { EventService } from './shared/event.service';
 import { ActivatedRoute } from '@angular/router';
