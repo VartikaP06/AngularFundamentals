@@ -11,7 +11,10 @@ import {
   EventListResolver,
   CreateSessionComponent,
   SessionListComponent,
-  DurationPipe
+  DurationPipe,
+  UpvoteComponent,
+  VoterService,
+  LocationValidator
 } from './events/index';
 import { AppRoutingModule } from './app-routing.module';
 import { EventsAppComponent } from './events-app.component';
@@ -42,7 +45,9 @@ let jQuery = window['$'];
     CollapsibleWellComponent,
     DurationPipe,
     SimpleModalComponent,
-    ModelTriggerDirective
+    ModelTriggerDirective,
+    UpvoteComponent,
+    LocationValidator
   ],
   imports: [
     BrowserModule,
@@ -57,6 +62,7 @@ let jQuery = window['$'];
     { provide: JQ_TOKEN, useValue: jQuery },
     EventRouteActivator,
     EventListResolver,
+    VoterService,
     AuthService,
     {
       provide: 'canDeactivateCreateEvent',
