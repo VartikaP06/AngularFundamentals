@@ -3,9 +3,9 @@ import { SessionListComponent } from './session-list.component';
 import { DebugElement, NO_ERRORS_SCHEMA } from '@angular/core';
 import { AuthService } from 'src/user/auth.service';
 import { VoterService } from './voter.service';
-//import { UpvoteComponent } from './upvote.component';
+// import { UpvoteComponent } from './upvote.component';
 import { DurationPipe } from '../shared';
-//import { CollapsibleWellComponent } from 'src/app/common';
+// import { CollapsibleWellComponent } from 'src/app/common';
 import { By } from '@angular/platform-browser';
 
 describe('SessionListComponent', () => {
@@ -27,9 +27,9 @@ describe('SessionListComponent', () => {
       imports: [],
       declarations: [
         SessionListComponent,
-        //UpvoteComponent,
+        // UpvoteComponent,
         DurationPipe // ,
-        //CollapsibleWellComponent
+        // CollapsibleWellComponent
       ],
       providers: [
         { provide: AuthService, useValue: mockAuthService },

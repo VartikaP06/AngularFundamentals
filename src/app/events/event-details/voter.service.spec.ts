@@ -1,4 +1,4 @@
-import { VoterService } from "./voter.service";
+import { VoterService } from './voter.service';
 import { ISession } from '../shared';
 import { of } from 'rxjs';
 
